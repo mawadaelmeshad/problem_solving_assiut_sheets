@@ -1,0 +1,21 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int n; cin>>n;
+    long long nums,maxi;
+    maxi=10000000000000000000;
+    for(int i=0;i<n;i++){
+        long long cntr=0;
+        cin>>nums;
+           while(nums%2==0){
+            nums=nums/2;
+            cntr++;
+            }
+            maxi=max(maxi,cntr);
+    }
+    cout<<maxi;
+    return 0;
+}
