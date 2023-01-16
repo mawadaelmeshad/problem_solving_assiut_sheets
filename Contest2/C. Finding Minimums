@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int n,k,mini,counter;  cin>>n>>k;
+    counter=0;  mini=1000000001;
+    int x[n];
+    for(int i=1;i<=n;i++){
+        cin>>x[i];
+         mini=min(mini,x[i]);
+         counter++;
+    if(counter==k || i==n){
+           cout<<mini<<" ";
+            mini=1000000001;
+            counter=0;
+    }
+ 
+    }
+ 
+    return 0;
+}
