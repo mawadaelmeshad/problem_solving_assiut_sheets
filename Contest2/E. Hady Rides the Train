@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    long long n; cin>>n;
+    long long row = n/4;
+    long long cloumn;
+    if(row%2==0){
+        cloumn=n%4;
+    }
+    else{
+        cloumn=3-(n%4);
+    }
+    cout<<row<<" "<<cloumn;
+    return 0;
+}
