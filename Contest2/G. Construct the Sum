@@ -1,0 +1,38 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+int arr[100001];
+int num,cntr; cin>>num;
+long long n,s,sum;
+ 
+for(int i=0;i<num;i++){
+    cin>>n>>s;
+    if(n*(n+1)/2<s){
+        cout<<-1;
+    }
+    else{
+            sum=0;
+ 
+        for(int j=n;j>=1;j--){
+            if(sum+j<=s){
+                sum+=j;
+                arr[cntr]=j;
+                cntr++;
+            }
+            if(sum==s){
+                break;
+            }
+        }
+    }
+    for(int x=0;x<cntr;x++){
+        cout<<arr[x]<<" ";
+    }
+    cout<<endl;
+    cntr=0;
+}
+ 
+    return 0;
+}
