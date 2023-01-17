@@ -1,0 +1,11 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+   double x,p; cin>>x>>p;
+ double p_before= p/(100-x)*100;
+   cout<<fixed<<setprecision(2)<<p_before;
+    return 0;
+}
