@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+ char s[122];
+ cin>>s;
+ int i;
+ if (s[i]>=48 && s[i]<65)
+ {
+     cout<<"IS DIGIT";
+ }
+ else if (s[i]>=65 && s[i]<97)
+ {
+     cout<<"ALPHA"<<endl<<"IS CAPITAL";
+ }
+ else if (s[i]>=97&& s[i]<=122)
+ {
+     cout<<"ALPHA"<<endl<<"IS SMALL";
+ }
+    return 0;
+}
