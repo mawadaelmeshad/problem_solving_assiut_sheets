@@ -1,0 +1,21 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+ char s [100];
+ cin>>s;
+ int i;
+ if(s[i]>='A' &&s[i]<='Z')
+ {
+    s[i]= s[i]+32;
+    cout<<s[i];
+ }
+ else if (s[i]>='a' && s[i]<='z')
+ {
+      s[i]= s[i]-32;
+         cout<<s[i];
+ }
+    return 0;
+}
