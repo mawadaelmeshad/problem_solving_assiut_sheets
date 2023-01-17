@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+  long long a,b,c;  cin>>a>>b>>c;
+  long long mini= min(a,b);
+  long long mini1=min(mini,c);
+  long long maxi= max(a,b);
+  long long maxi1=max(maxi,c);
+  cout<<mini1<<" "<<maxi1;
+    return 0;
+}
