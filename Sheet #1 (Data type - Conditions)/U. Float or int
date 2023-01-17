@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+   double n,intpart,fractpart;  cin>>n;
+   fractpart= modf(n, &intpart);
+   if(fractpart!=0)
+     cout<<"float "<<intpart<<" "<<fractpart;
+     else
+        cout<<"int "<<intpart;
+ 
+    return 0;
+}
