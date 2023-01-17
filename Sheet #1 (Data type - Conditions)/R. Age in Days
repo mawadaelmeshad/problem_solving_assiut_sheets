@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    long long days;
+    cin>>days;
+    long long years= days/365;
+    long long remainder = days%365;
+ 
+    long long months= remainder/30;
+    long long dayss=remainder%30;
+    cout<<years<<" years"<<endl;
+    cout<<months<<" months"<<endl;
+    cout<<dayss<<" days"<<endl;
+    return 0;
+}
