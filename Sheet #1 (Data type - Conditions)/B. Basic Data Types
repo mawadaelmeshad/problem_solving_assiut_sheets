@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+#include <bits/stdc++.h>
+ 
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+   int n;
+   cin>>n;
+   long long num;
+   cin>>num;
+   char ch;
+   cin>>ch;
+   float f;
+   cin>>f;
+   double d;
+   cin>>d;
+   
+   cout<<n<<endl;
+   cout<<num<<endl;
+   cout<<ch<<endl;
+   cout<< fixed<< setprecision(3)<<f<<endl;
+   cout<< fixed<< setprecision(9)<<d<<endl;
+   
+   
+       
+   
+   
+    return 0;
+}
