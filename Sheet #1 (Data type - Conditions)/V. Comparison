@@ -1,0 +1,42 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    char s;
+   int n1,n2;
+   cin>>n1>>s>>n2;
+   if ((n1>n2) && s =='>')
+   {
+       cout<<"Right";
+   }
+else if ((n1>n2) && s !='>')
+{
+ 
+     cout<<"Wrong";
+}
+ 
+else if ((n1<n2) && s =='<')
+   {
+       cout<<"Right";
+   }
+else if ((n1<n2) && s !='<')
+   {
+        cout<<"Wrong";
+   }
+ 
+else if ((n1=n2) && s =='=')
+   {
+       cout<<"Right";
+   }
+ 
+else if ((n1=n2) && s !='=')
+   {
+     cout<<"Wrong";
+   }
+ 
+ 
+ 
+    return 0;
+}
