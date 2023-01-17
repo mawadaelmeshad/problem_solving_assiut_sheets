@@ -1,0 +1,30 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   long long  a,b,c,mini,maxi,middle;  cin>>a>>b>>c;
+  mini=min(a,b);
+  mini=min(mini,c);
+  maxi=max(a,b);
+  maxi=max(maxi,c);
+  if(a!=mini && a!=maxi)
+    middle=a;
+  else if(b!=mini && b!=maxi)
+    middle=b;
+  else if(c!=mini && c!=maxi)
+    middle=c;
+    else if(a==c)
+        middle=maxi;
+ else
+    middle=b;
+  cout<<mini<<endl;
+  cout<<middle<<endl;
+  cout<<maxi<<endl;
+  cout<<endl;
+  cout<<a<<endl;
+  cout<<b<<endl;
+  cout<<c<<endl;
+ 
+    return 0;
