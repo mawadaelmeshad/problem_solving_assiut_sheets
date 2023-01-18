@@ -1,0 +1,27 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+  int n , num;
+  num=0;
+  cin>>n;
+      for(int j=2;j<=n/2;j++)
+      {
+          if(n%j==0)
+          {
+              num=1;
+              break;
+          }
+      }
+       if (num ==0)
+           cout<<"YES";
+       else
+        cout<<"NO";
+        return 0;
+}
+ 
+ 
+ 
+ 
