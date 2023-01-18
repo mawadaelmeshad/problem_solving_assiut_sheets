@@ -1,0 +1,38 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+  int num,values,count_even,count_odd,negative,positive;
+  count_even =0;
+  count_odd=0;
+  negative=0;
+  positive=0;
+    cin>>num;
+  for (int i =1; i<=num ; i++)
+  {
+      cin>>values;
+          if(values%2==0)
+          {
+              count_even+=1;
+          }
+          else if (values%2!=0)
+          {
+              count_odd+=1;
+          }
+          if(values<0)
+          {
+              negative+=1;
+          }
+          else if(values>0)
+          {
+             positive+=1;
+          }
+  }
+          cout<<"Even: "<<count_even<<endl;
+          cout<<"Odd: "<<count_odd<<endl;
+          cout<<"Positive: "<<positive<<endl;
+          cout<<"Negative: "<<negative<<endl;
+    return 0; 
+}
