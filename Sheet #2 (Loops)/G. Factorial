@@ -1,0 +1,20 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+long long p;
+   int num,i,k;
+   cin>>num;
+   for(int i =1;i<=num;i++){
+    p=1;
+    cin>>k;
+     for(int i=k;i>0;i--){
+     p= p*i;
+   }
+ cout<<p<<endl;
+   }
+ 
+ return 0;
+}
