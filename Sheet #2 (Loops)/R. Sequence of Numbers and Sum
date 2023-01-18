@@ -1,22 +1,31 @@
 #include <iostream>
- 
+#include <algorithm>
 using namespace std;
  
-int main()
-{
-  int n; cin>>n;
-  for(int i=0;i<n;i++){
-    int x,y,mini,maxi,sum;  sum=0;
-    cin>>x;
-    cin>>y;
-    mini=min(x,y);
-    maxi=max(x,y);
-    for(int j=mini+1;j<maxi;j++){
-        if(j%2!=0){
-            sum=sum+j;
+void fast () {
+    cin.sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+}
+int32_t main() {
+    fast();
+    double x,y;
+    while(cin>>x>>y){
+        int min = x, max;
+        if(min > y){
+            min = y;
+            max = x;
+        }else{
+            max = y;
         }
+        if(x <= 0 || y <= 0)break;
+        int cnt = 0;
+        for(int i = min; i <= max; ++i){
+            cout << i << " ";
+            cnt += i;
+        }
+        cout << "sum =" << cnt << endl;
     }
-    cout<<sum<<endl;
-  }
+ 
     return 0;
 }
