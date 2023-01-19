@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+ int n,sum,begini=0,endi=1;  cin>>n;
+ sum=0;
+  if(n==1){
+    cout<<begini;
+  }
+  else if(n==2){
+    cout<<begini<<" "<<endi;
+  }
+  else
+    cout<<begini<<" "<<endi<<" ";
+    for(int i=2;i<n;i++){
+        int result= begini+endi;
+        cout<<result<<" ";
+        begini=endi;
+        endi=result;
+    }
+    return 0;
+}
