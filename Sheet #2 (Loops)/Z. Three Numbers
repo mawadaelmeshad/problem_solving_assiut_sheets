@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   int begini,endi,counter;  cin>>begini>>endi;
+   counter=0;
+   for(int i=0;i<=begini;i++){
+    for(int z=0;z<=begini;z++){
+        if(endi-i-z >=0 && endi-i-z <=begini){
+            counter++;
+        }
+    }
+   }
+   cout<<counter<<endl;
+    return 0;
+}
