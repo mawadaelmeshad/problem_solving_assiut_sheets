@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+   int n,num,sum; cin>>n;
+   int counter;
+   for(int i=1;i<=n;i++){
+     sum=0;
+    counter=0;
+    cin>>num;
+    while(num>0){
+        if(num%2==1){
+           ++counter;
+        }
+        num=num/2;
+    }
+    for(int k=0;k<counter;k++){
+     sum+=1*pow(2,k);
+   }
+   cout<<sum<<endl;
+ 
+   }
+ 
+    return 0;
+}
