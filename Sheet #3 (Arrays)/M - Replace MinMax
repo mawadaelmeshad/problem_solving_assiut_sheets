@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   long long n,mini,maxi,pos1,pos2;
+   cin>>n;
+   mini=100001;
+   maxi= -100001;
+   int i;
+  long long k[n];
+   for( i=0;i<n;i++)
+   {
+       cin>>k[i];
+       if(k[i]<mini)
+       {
+         mini=min(mini,k[i]);
+         pos1=i;
+       }
+       if(k[i]>maxi)
+       {
+            maxi=max(maxi,k[i]);
+            pos2=i;
+       }
+
+   }
+    swap(k[pos1],k[pos2]);
+ for (int i=0;i<n;i++)
+ {
+
+       cout<<k[i]<<" ";
+ }
+
+
+    return 0;
+}
