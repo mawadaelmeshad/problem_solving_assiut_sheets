@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+  long long n,i,num,j;
+
+    cin>>n;
+  long long  k[n];
+    for ( i=0;i<n;i++)
+    {
+        cin>>k[i];
+
+
+}
+cin>>num;
+ for ( j=0;j<n;j++)
+{
+        if (k[j]==num){
+            cout<<j;
+            return 0;
+        }
+
+    }
+      if (k[j]!=num)
+        {
+
+            cout<<"-1";
+        }
+}
