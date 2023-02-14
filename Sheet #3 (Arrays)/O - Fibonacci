@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ long long n;  cin>>n;
+ long long begini=0;
+ long long endi=1;
+   if(n==1){
+    cout<<begini;
+   }
+   else if(n==2){
+    cout<<endi;
+   }
+   else{
+    for(int i=3;i<=n;i++){
+       long long sum=endi+begini;
+        begini=endi;
+        endi=sum;
+    }
+     cout<<endi;
+   }
+    return 0;
+}
