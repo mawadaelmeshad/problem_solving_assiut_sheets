@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ string s; cin>>s;
+ int i=0,j=0;
+ string s2="hello";
+ while(true)
+ {
+     if(i== s.length()|| j==s2.length())
+     {
+         break;
+     }
+     if(s[i]==s2[j])
+     {
+         j++;
+     }
+     i++;
+ }
+ if(j==s2.length())
+ {
+     cout<<"YES";
+
+ }
+ else
+    cout<<"NO";
+    return 0;
+}
