@@ -1,0 +1,29 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string u; cin>>u;
+    int size= u.length();
+    for(int i=0;i<size;i++)
+    {
+        if(u[i]=='?'){
+            i++;
+            for(int m=i;m<size;m++)
+            {
+                if(u[m]=='='){
+                    cout<<": ";
+                    continue;
+                }
+                if(u[m]=='&'){
+                    cout<<endl;
+                    continue;
+                }
+                cout<<u[m];
+            }
+            break;
+        }
+    }
+    return 0;
+}
