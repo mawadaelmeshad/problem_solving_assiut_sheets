@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   string k = "PgEfTYaWGHjDAmxQqFLRpCJBownyUKZXkbvzIdshurMilNSVOtec#@_!=.+-*/";
+   string o = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+   int flag,z;
+   cin>>flag;
+   string value;
+   cin>>value;
+   if(flag==1){
+    for(int i=0;i<value.size();i++){
+        for(z=0;z<o.size();z++){
+            if(value[i]==o[z]){
+                break;
+            }
+        }
+        cout<<k[z];
+    }
+   }
+   else{
+         for(int i=0;i<value.size();i++){
+        for(z=0;z<k.size();z++){
+            if(value[i]==k[z]){
+                break;
+            }
+        }
+        cout<<o[z];
+    }
+
+   }
+    return 0;
+}
