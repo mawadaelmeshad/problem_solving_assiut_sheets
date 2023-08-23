@@ -1,0 +1,21 @@
+#include <iostream>
+#include <algorithm>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s; cin>>s;
+     string test = s,tn;
+    for(int i=1; i<s.length();i++){
+        tn = s;
+        sort(tn.begin(),tn.begin()+i);
+        if(i<s.size()-1)
+         sort(tn.begin()+i,tn.end());
+        test = min(test,tn);
+
+    }
+    cout<<test;
+
+    return 0;
+}
