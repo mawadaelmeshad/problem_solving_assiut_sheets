@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{  int maxi=-1;
+   int n,counter;  cin>>n;
+   string s;  cin>>s;
+   char flag;
+   counter = 0;
+   for(int i=0;i<n;i++)
+   {
+      if(i==0){
+        flag= s[i];
+        counter++;
+      }
+      else if(s[i]!=flag){
+        counter++;
+        flag=s[i];
+      }
+   }
+   cout<<counter;
+
+    return 0;
+}
